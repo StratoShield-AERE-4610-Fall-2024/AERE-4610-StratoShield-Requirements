@@ -86,7 +86,7 @@
 \setlength\bibitemsep{1.5\itemsep} % Adjust the space between references
 \setlength\bibhang{0pt} % Remove indentation
 \renewcommand*{\bibfont}{\small} % Change references font size
-% \addbibresource{Bibliography/Bibliography.bib} % Reference document
+\addbibresource{Bibliography/Bibliography.bib} % Reference document
 
 % Highlight both Author and Year in the citations
 \ExecuteBibliographyOptions{maxcitenames=1}

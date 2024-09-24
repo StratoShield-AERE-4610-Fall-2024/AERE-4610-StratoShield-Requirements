@@ -1,0 +1,60 @@
+\chapter{Aircraft Requirements}\label{cp:aircraft_reqs}
+
+\section{Functional}\label{sec:functional}
+
+\begin{enumerate}
+    \item The \acrshort{uav} shall be capable of disabling a hostile \acrshort{suas} by kinetic impact.
+    \item The \acrshort{uav} shall initiate a landing sequence when the estimated battery capacity would be \qty{10}{\percent} at wheels-down.
+    \item The \acrshort{uav} shall initiate a landing sequence when the \acrshort{uav} battery no longer has the capacity to execute a kinetic impact event on a hostile \acrshort{suas} in the \acrshort{aoi}.
+    \item The \acrshort{uav} shall be capable of landing autonomously.
+    \item The \acrshort{uav} battery shall have enough capacity to power all onboard electrics for a full flight cycle.
+    \item The \acrshort{uav} shall be capable of jamming the radio connection of a \acrshort{suas}.
+\end{enumerate}
+
+\section{Performance}\label{sec:performance}
+
+\begin{enumerate}
+    \item The \acrshort{uav} shall be capable of flying at \qty{150}{\meter} \acrfull{agl} or higher.
+    \begin{itemize}
+        \item Based on the software-limited flight ceiling of the DJI Mavic 3 \citep{dji_mavic_3}.
+    \end{itemize}
+    \item The \acrshort{uav} shall be capable of diving at an airspeed of \qty{45}{\meter\per\second} or greater.
+    \begin{itemize}
+        \item Based on the estimated amount of kinetic energy required to disable a \acrshort{suas}.
+    \end{itemize}
+    \item The \acrshort{uav} shall be capable of carrying a minimum payload \qty{1}{\kilo\gram}.
+        \begin{itemize}
+            \item Based on rough estimates from previous senior design payloads.
+        \end{itemize}
+\end{enumerate}
+
+\section{Interface}\label{sec:interface}
+
+\begin{enumerate}
+    \item The \acrshort{uav} shall be equipped with a transmitter capable of communicating with a controller.
+    \item The \acrshort{uav} shall be equipped with equipment capable of detecting a \acrshort{suas}.
+    \item The \acrshort{uav} shall be equipped with equipment capable of jamming a \acrshort{suas}.
+\end{enumerate}
+
+\section{Environmental}\label{sec:environmental}
+
+\begin{enumerate}
+    \item The aircraft shall be capable of operating in temperatures from \qtyrange{-10}{40}{\celsius}.
+        \begin{itemize}
+            \item Based on the operating temperature of the DJI Mavic 3 \citep{dji_mavic_3}.
+        \end{itemize}
+\end{enumerate}
+
+\section{Reliability}\label{sec:reliability}
+
+\begin{enumerate}
+    \item The \acrshort{uav} transmitter shall maintain a continuous radio connection with the controller throughout the entire flight cycle.
+    \item The \acrshort{uav} transmitter shall maintain a continuous radio connection with the controller at any location in the \acrshort{aoi}.
+\end{enumerate}
+
+\section{Safety}\label{sec:safety}
+
+\begin{enumerate}
+    \item The \acrshort{uav} shall be capable of avoiding obstacles while in flight.
+    \item An operator shall be capable of changing the \acrshort{uav} battery while maintaining a safe distance from the propellers.
+\end{enumerate}
